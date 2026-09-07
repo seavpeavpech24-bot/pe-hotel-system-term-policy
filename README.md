@@ -1,4 +1,4 @@
-# Hotel Management System
+# Pe Hotel Management System
 
 ## Terms, License & Support Policy
 

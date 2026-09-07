@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Terms, License and Support Policy for Hotel Management System by Seavpeav Pech.">
+  <title>Pe Hotel Management System — Terms & Policies</title>
+  <style>
+    :root {
+      --bg: #f6f7fb;
+      --card: #ffffff;
+      --text: #172033;
+      --muted: #667085;
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --border: #e5e7eb;
+      --soft: #eff6ff;
+      --shadow: 0 12px 35px rgba(16, 24, 40, .08);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .hero {
+      background: linear-gradient(135deg, #0f172a, #1e3a8a);
+      color: white;
+      padding: 72px 20px 62px;
+    }
+
+    .hero-inner, .container {
+      width: min(1050px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .hero-inner { text-align: center; }
+
+    .badge {
+      display: inline-block;
+      padding: 7px 14px;
+      border: 1px solid rgba(255,255,255,.25);
+      background: rgba(255,255,255,.1);
+      border-radius: 999px;
+      font-size: .85rem;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      line-height: 1.15;
+      letter-spacing: -.03em;
+    }
+
+    .hero p {
+      max-width: 720px;
+      margin: 18px auto 0;
+      color: rgba(255,255,255,.82);
+      font-size: 1.05rem;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 28px;
+    }
+
+    .meta span {
+      padding: 8px 13px;
+      border-radius: 8px;
+      background: rgba(255,255,255,.1);
+      border: 1px solid rgba(255,255,255,.16);
+      font-size: .9rem;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 230px 1fr;
+      gap: 28px;
+      align-items: start;
+      padding: 38px 0 70px;
+    }
+
+    .toc {
+      position: sticky;
+      top: 18px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px;
+      box-shadow: var(--shadow);
+    }
+
+    .toc strong {
+      display: block;
+      margin-bottom: 10px;
+      font-size: .9rem;
+    }
+
+    .toc a {
+      display: block;
+      padding: 6px 0;
+      color: var(--muted);
+      font-size: .87rem;
+    }
+
+    .toc a:hover { color: var(--primary); }
+
+    .content {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      padding: clamp(24px, 5vw, 48px);
+    }
+
+    section {
+      padding-bottom: 28px;
+      margin-bottom: 30px;
+      border-bottom: 1px solid var(--border);
+      scroll-margin-top: 20px;
+    }
+
+    section:last-child {
+      border-bottom: 0;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    h2 {
+      margin: 0 0 13px;
+      font-size: 1.4rem;
+      line-height: 1.3;
+    }
+
+    p { margin: 0 0 12px; }
+    ul { margin: 8px 0 14px; padding-left: 23px; }
+    li { margin: 5px 0; }
+
+    .notice {
+      background: var(--soft);
+      border-left: 4px solid var(--primary);
+      padding: 18px 20px;
+      border-radius: 8px;
+      margin: 22px 0 28px;
+    }
+
+    .notice strong { display: block; margin-bottom: 4px; }
+
+    .contact {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .contact-card {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px;
+      background: #fafafa;
+    }
+
+    .contact-card small {
+      display: block;
+      color: var(--muted);
+      margin-bottom: 3px;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 28px 16px 45px;
+      font-size: .9rem;
+    }
+
+    .top {
+      display: inline-block;
+      margin-top: 12px;
+      font-size: .85rem;
+    }
+
+    @media (max-width: 800px) {
+      .layout { grid-template-columns: 1fr; }
+      .toc {
+        position: static;
+        display: none;
+      }
+      .contact { grid-template-columns: 1fr; }
+      .hero { padding-top: 52px; }
+    }
+
+    @media print {
+      body { background: white; }
+      .hero { background: white; color: black; padding: 25px 0; }
+      .hero p, .meta span { color: #333; }
+      .toc { display: none; }
+      .layout { display: block; padding-top: 0; }
+      .content { box-shadow: none; border: 0; }
+      a { color: black; text-decoration: none; }
+    }
+  </style>
+</head>
+
+<body id="top">
+
+<header class="hero">
+  <div class="hero-inner">
+    <span class="badge">OFFLINE • LIFETIME LICENSE</span>
+    <h1>Pe Hotel Management System</h1>
+    <p>
+      Terms, License, Support, Data &amp; Privacy Policy
+    </p>
+
+    <div class="meta">
+      <span>Author: Seavpeav Pech</span>
+      <span>Last Updated: September 7, 2026</span>
+      <span>License: Lifetime</span>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <div class="layout">
+
+    <aside class="toc">
+      <strong>Contents</strong>
+      <a href="#about">1. About the Software</a>
+      <a href="#license">2. License</a>
+      <a href="#purchase">3. One-Time Purchase</a>
+      <a href="#restrictions">4. License Restrictions</a>
+      <a href="#lifetime">5. Lifetime License</a>
+      <a href="#updates">6. Software Updates</a>
+      <a href="#support">7. Customer Support</a>
+      <a href="#major-support">8. Major Support</a>
+      <a href="#data">9. Customer Data</a>
+      <a href="#backup">10. Data Backup</a>
+      <a href="#privacy">11. Privacy</a>
+      <a href="#security">12. Security</a>
+      <a href="#activation">13. License Activation</a>
+      <a href="#hardware">14. Hardware Replacement</a>
+      <a href="#cloud">15. No Automatic Cloud Storage</a>
+      <a href="#third-party">16. Third-Party Services</a>
+      <a href="#warranty">17. Software Warranty</a>
+      <a href="#responsibility">18. Customer Responsibility</a>
+      <a href="#refunds">19. Refunds</a>
+      <a href="#customization">20. Customization</a>
+      <a href="#ownership">21. Intellectual Property</a>
+      <a href="#changes">22. Changes to These Terms</a>
+      <a href="#acceptance">23. Acceptance</a>
+      <a href="#contact">24. Contact &amp; Support</a>
+      <a href="#notice">25. Important Notice</a>
+    </aside>
+
+    <article class="content">
+
+      <div class="notice">
+        <strong>Important</strong>
+        This software is an offline hotel management system with a one-time lifetime
+        license. Customer business data is stored locally according to the system
+        configuration. Minor support is included; major support and custom development
+        may require additional charges.
+      </div>
+
+      <section id="about">
+        <h2>1. About the Software</h2>
+        <p>
+          Hotel Management System is an offline hotel management software designed to
+          help hotels, guesthouses, resorts, and other accommodation businesses manage
+          their daily operations.
+        </p>
+        <p>
+          The software is designed to operate locally on the customer's computer or
+          local network. Customer data is stored on the customer's local machine or
+          local database according to the system configuration.
+        </p>
+        <p>
+          The software does not require an internet connection for normal operation
+          unless a specific feature requires an internet connection.
+        </p>
+      </section>
+
+      <section id="license">
+        <h2>2. License</h2>
+        <p>
+          The software is provided under a <strong>Lifetime License</strong>.
+        </p>
+        <p>
+          The customer pays for the license one time and may continue using the
+          licensed version of the software indefinitely, subject to these Terms and
+          Conditions.
+        </p>
+        <p>
+          The lifetime license allows the customer to use the software for their own
+          business operations.
+        </p>
+        <p>
+          The license does not mean that the customer owns the software source code,
+          intellectual property, design, or underlying technology. All software rights,
+          including source code, design, structure, functionality, and intellectual
+          property, remain with the software author unless a separate written agreement
+          states otherwise.
+        </p>
+      </section>
+
+      <section id="purchase">
+        <h2>3. One-Time Purchase</h2>
+        <p>
+          The software license is purchased as a one-time payment. After the license
+          has been successfully activated, the customer may continue using the licensed
+          software without recurring license fees for the licensed installation/use.
+        </p>
+        <p>
+          There is no monthly or yearly subscription fee for the lifetime license.
+        </p>
+      </section>
+
+      <section id="restrictions">
+        <h2>4. License Restrictions</h2>
+        <p>Unless separately agreed in writing, the customer may not:</p>
+        <ul>
+          <li>Resell the software.</li>
+          <li>Distribute copies of the software to other businesses.</li>
+          <li>Share or transfer the license to another business without authorization.</li>
+          <li>Copy, modify, or redistribute the software source code.</li>
+          <li>Remove copyright, ownership, or license information.</li>
+          <li>Reverse engineer the software for the purpose of creating a competing product.</li>
+          <li>Use one license for multiple independent businesses when the license was issued for a specific business.</li>
+          <li>Share the licensed software with unauthorized third parties.</li>
+        </ul>
+        <p>
+          The author may provide a separate license if the customer requires multiple
+          locations, businesses, branches, or installations.
+        </p>
+      </section>
+
+      <section id="lifetime">
+        <h2>5. Lifetime License Does Not Mean Lifetime Free Development</h2>
+        <p>
+          The lifetime license provides lifetime usage of the licensed software
+          version. It does not include unlimited future development, new features,
+          custom development, integrations, or major system changes.
+        </p>
+        <p>Examples of work that may require an additional charge include:</p>
+        <ul>
+          <li>New modules.</li>
+          <li>Major new features.</li>
+          <li>Custom reports.</li>
+          <li>New payment integrations.</li>
+          <li>New accounting features.</li>
+          <li>New hardware integrations.</li>
+          <li>Custom workflows.</li>
+          <li>New third-party system integrations.</li>
+          <li>Significant UI/UX changes.</li>
+          <li>Features specifically requested by the customer.</li>
+        </ul>
+        <p>
+          Any additional development cost will be discussed and agreed with the
+          customer before the work begins.
+        </p>
+      </section>
+
+      <section id="updates">
+        <h2>6. Software Updates</h2>
+        <p>
+          The author may release software updates, improvements, bug fixes, security
+          improvements, or other changes from time to time.
+        </p>
+        <p>Updates may include:</p>
+        <ul>
+          <li>Bug fixes.</li>
+          <li>Performance improvements.</li>
+          <li>Usability improvements.</li>
+          <li>Minor feature improvements.</li>
+          <li>Compatibility improvements.</li>
+        </ul>
+        <p>
+          Not every future update or feature is automatically included in the
+          customer's lifetime license. Major upgrades or customer-specific development
+          may require an additional payment.
+        </p>
+      </section>
+
+      <section id="support">
+        <h2>7. Customer Support</h2>
+        <p>
+          The customer receives support after purchasing the software. Support is
+          intended to help the customer use the existing software and resolve normal
+          software-related issues.
+        </p>
+        <p><strong>Small support is provided without additional charges</strong> as part of the lifetime license support.</p>
+        <p>Examples include:</p>
+        <ul>
+          <li>Explaining how to use an existing feature.</li>
+          <li>Helping with normal software usage.</li>
+          <li>Basic configuration assistance.</li>
+          <li>Basic troubleshooting.</li>
+          <li>Fixing minor software issues.</li>
+          <li>Guidance regarding existing system functions.</li>
+          <li>Assistance with normal installation or activation issues.</li>
+        </ul>
+        <p>
+          The author will make reasonable efforts to provide support when requested.
+        </p>
+      </section>
+
+      <section id="major-support">
+        <h2>8. Major Support and Custom Work</h2>
+        <p>
+          For the <strong>first month after the purchase date</strong>, reasonable
+          assistance with installation, configuration, and initial system setup may
+          be provided as part of the purchase support.
+        </p>
+        <p>
+          After the first month, major support, extensive troubleshooting, onsite
+          assistance, system modification, or custom development may require an
+          additional charge.
+        </p>
+        <p>Examples include:</p>
+        <ul>
+          <li>Major system problems caused by the customer's computer or operating environment.</li>
+          <li>Recovering data after customer-created problems.</li>
+          <li>Database repair caused by improper operation or third-party software.</li>
+          <li>Moving the system to a new environment.</li>
+          <li>Major system configuration.</li>
+          <li>Custom reports or features.</li>
+          <li>New modules and integrations.</li>
+          <li>Data migration.</li>
+          <li>Major database modification.</li>
+          <li>Onsite support.</li>
+          <li>Training beyond normal software guidance.</li>
+        </ul>
+        <p>
+          The additional charge will depend on the requested work and will be
+          communicated before the work begins.
+        </p>
+      </section>
+
+      <section id="data">
+        <h2>9. Customer Data</h2>
+        <p>
+          The software is designed as an offline system. Customer business data is
+          stored locally according to the software's database configuration.
+        </p>
+        <p>
+          The author does not automatically control, monitor, or store the customer's
+          hotel business data on an external server unless a separate online service
+          or integration has been agreed upon.
+        </p>
+        <p>
+          The customer is responsible for protecting their own computer, database,
+          files, and business information.
+        </p>
+      </section>
+
+      <section id="backup">
+        <h2>10. Data Backup Responsibility</h2>
+        <p>The customer is responsible for regularly backing up their own data.</p>
+        <p>The author strongly recommends maintaining regular backups of:</p>
+        <ul>
+          <li>Guest information.</li>
+          <li>Reservation information.</li>
+          <li>Room information.</li>
+          <li>Payment records.</li>
+          <li>Invoice records.</li>
+          <li>Expenses.</li>
+          <li>Employee information.</li>
+          <li>Reports.</li>
+          <li>Database files.</li>
+          <li>Other important hotel business data.</li>
+        </ul>
+        <p>
+          The author is not responsible for permanent data loss caused by hard disk
+          or SSD failure, computer damage, operating system failure, virus or malware,
+          accidental deletion, theft, fire, flood, improper database handling,
+          unauthorized modifications, or failure to maintain backups.
+        </p>
+      </section>
+
+      <section id="privacy">
+        <h2>11. Privacy</h2>
+        <p>
+          Because the system is designed to operate offline, customer data is
+          primarily stored locally on the customer's computer or local network.
+        </p>
+        <p>
+          The customer is responsible for ensuring that access to the computer and
+          hotel system is properly controlled.
+        </p>
+        <p>
+          The customer should protect sensitive information such as guest personal
+          information, telephone numbers, identification information, payment
+          information, employee information, and business financial information.
+        </p>
+        <p>
+          The customer should also follow applicable privacy and data protection
+          requirements in their country or business location.
+        </p>
+      </section>
+
+      <section id="security">
+        <h2>12. Security</h2>
+        <p>
+          The software may provide security features such as user accounts, passwords,
+          permissions, and access control depending on the installed version.
+        </p>
+        <p>
+          No software can guarantee complete protection against every possible
+          security threat.
+        </p>
+        <p>The customer is responsible for:</p>
+        <ul>
+          <li>Keeping passwords confidential.</li>
+          <li>Creating appropriate user accounts.</li>
+          <li>Restricting access to authorized employees.</li>
+          <li>Protecting the computer from malware.</li>
+          <li>Keeping the operating system secure.</li>
+          <li>Maintaining backups.</li>
+          <li>Protecting database files and backup files.</li>
+        </ul>
+      </section>
+
+      <section id="activation">
+        <h2>13. License Activation</h2>
+        <p>
+          The software may require license activation. The license may be associated
+          with a specific computer, device, installation, or business depending on
+          the license configuration.
+        </p>
+        <p>
+          If the customer replaces or upgrades their computer, they should contact
+          the author for assistance with license transfer or reactivation.
+        </p>
+        <p>
+          License transfer may be subject to verification and the applicable license
+          conditions.
+        </p>
+      </section>
+
+      <section id="hardware">
+        <h2>14. Hardware Replacement</h2>
+        <p>
+          If the customer's computer is replaced because of hardware failure, upgrade,
+          or other legitimate business reasons, the customer may contact the author
+          for assistance with moving or reactivating the license.
+        </p>
+        <p>
+          The author may request information to verify the original licensed
+          installation. A license is not intended to be freely shared between
+          unrelated computers or businesses.
+        </p>
+      </section>
+
+      <section id="cloud">
+        <h2>15. No Automatic Cloud Storage</h2>
+        <p>
+          This software is an offline system. Unless specifically stated otherwise,
+          the software does not automatically upload hotel data to cloud storage or
+          an external server.
+        </p>
+        <p>
+          The customer should not assume that their data is automatically backed up
+          online. Customers are responsible for creating and maintaining their own
+          backup copies.
+        </p>
+      </section>
+
+      <section id="third-party">
+        <h2>16. Third-Party Services</h2>
+        <p>
+          Some optional features may depend on third-party software, hardware, APIs,
+          payment services, operating systems, printers, or other external services.
+        </p>
+        <p>
+          The author is not responsible for changes, interruptions, restrictions, or
+          failures caused by third-party services.
+        </p>
+        <p>
+          If a third-party service changes its API, pricing, requirements, or
+          availability, additional work may be required to maintain or modify the
+          related integration.
+        </p>
+      </section>
+
+      <section id="warranty">
+        <h2>17. Software Warranty</h2>
+        <p>
+          The software is provided with reasonable effort to ensure that the system
+          functions according to its intended purpose.
+        </p>
+        <p>
+          However, the author does not guarantee that the software will always
+          operate without errors or interruptions in every possible computer
+          environment.
+        </p>
+        <p>Software behavior may be affected by:</p>
+        <ul>
+          <li>Windows updates.</li>
+          <li>Hardware changes.</li>
+          <li>Third-party software.</li>
+          <li>Antivirus software.</li>
+          <li>Network configuration.</li>
+          <li>User configuration.</li>
+          <li>Damaged files.</li>
+          <li>Unauthorized modifications.</li>
+          <li>Hardware failure.</li>
+        </ul>
+        <p>
+          The author will make reasonable efforts to investigate and fix confirmed
+          software defects.
+        </p>
+      </section>
+
+      <section id="responsibility">
+        <h2>18. Customer Responsibility</h2>
+        <p>
+          The customer is responsible for verifying important business information
+          entered into and generated by the system.
+        </p>
+        <p>This includes:</p>
+        <ul>
+          <li>Room availability.</li>
+          <li>Reservations.</li>
+          <li>Guest information.</li>
+          <li>Payments.</li>
+          <li>Invoices.</li>
+          <li>Expenses.</li>
+          <li>Financial reports.</li>
+          <li>Employee information.</li>
+          <li>Other business records.</li>
+        </ul>
+        <p>
+          The software is a management tool and should not replace the customer's
+          normal business controls and verification procedures.
+        </p>
+      </section>
+
+      <section id="refunds">
+        <h2>19. Refunds</h2>
+        <p>
+          Because the software is a digital product and license activation may be
+          associated with the customer's device or business, refund requests may be
+          considered on a case-by-case basis.
+        </p>
+        <p>
+          Before purchasing, customers are encouraged to review the software features
+          and confirm that the system meets their business requirements.
+        </p>
+        <p>
+          Custom development, third-party services, and completed support work may
+          have separate terms.
+        </p>
+      </section>
+
+      <section id="customization">
+        <h2>20. Customization</h2>
+        <p>Customers may request customization of the software.</p>
+        <p>Customization may include:</p>
+        <ul>
+          <li>New features.</li>
+          <li>New screens.</li>
+          <li>New reports.</li>
+          <li>Custom invoice formats.</li>
+          <li>Custom hotel workflows.</li>
+          <li>Integration with other systems.</li>
+          <li>Changes to existing functionality.</li>
+          <li>Branding or UI changes.</li>
+          <li>Database modifications.</li>
+        </ul>
+        <p>
+          Customization is not automatically included in the standard lifetime
+          license. The requested customization will be reviewed and the development
+          requirements and additional cost will be agreed before development begins.
+        </p>
+      </section>
+
+      <section id="ownership">
+        <h2>21. Ownership and Intellectual Property</h2>
+        <p>
+          The software, source code, architecture, database structure, user interface
+          design, graphics, documentation, and related intellectual property remain
+          the property of <strong>Seavpeav Pech</strong>, unless otherwise agreed in
+          a separate written agreement.
+        </p>
+        <p>
+          Purchasing a license grants the customer the right to use the software
+          according to the license terms. It does not automatically transfer
+          ownership of the source code or intellectual property.
+        </p>
+      </section>
+
+      <section id="changes">
+        <h2>22. Changes to These Terms</h2>
+        <p>
+          The author may update these Terms and Policies when necessary to reflect
+          changes to the software, services, security practices, or legal requirements.
+        </p>
+        <p>
+          The latest version may be provided with future software updates or made
+          available through the author's official communication channels.
+        </p>
+      </section>
+
+      <section id="acceptance">
+        <h2>23. Acceptance of Terms</h2>
+        <p>
+          By installing, activating, or using the Hotel Management System, the
+          customer acknowledges that they have read and understood these Terms and
+          Policies and agree to comply with them.
+        </p>
+        <p>
+          If the customer does not agree with these terms, they should not use the
+          software.
+        </p>
+      </section>
+
+      <section id="contact">
+        <h2>24. Contact and Support</h2>
+        <p>
+          For software support, license assistance, bug reports, customization
+          requests, or other questions, please contact:
+        </p>
+
+        <div class="contact">
+          <div class="contact-card">
+            <small>Author</small>
+            <strong>Seavpeav Pech</strong>
+          </div>
+          <div class="contact-card">
+            <small>Email</small>
+            <a href="mailto:seavpeavpech24@gmail.com">seavpeavpech24@gmail.com</a>
+          </div>
+          <div class="contact-card">
+            <small>WhatsApp</small>
+            <a href="https://wa.me/85516700896" target="_blank" rel="noopener">
+              +855 16 700 896
+            </a>
+          </div>
+        </div>
+
+        <p style="margin-top:18px;">When contacting support, customers are encouraged to provide:</p>
+        <ul>
+          <li>Hotel/business name.</li>
+          <li>Software version.</li>
+          <li>Description of the issue.</li>
+          <li>Screenshot or error message when applicable.</li>
+          <li>Computer/device information when required.</li>
+        </ul>
+      </section>
+
+      <section id="notice">
+        <h2>25. Important Notice</h2>
+        <div class="notice">
+          <strong>Offline • Lifetime License</strong>
+          The customer purchases the right to use the licensed software on the agreed
+          installation/device.
+          <br><br>
+          The lifetime license does not include unlimited custom development or
+          unlimited major technical services.
+          <br><br>
+          Minor software support is included. Major support, custom development,
+          major upgrades, data migration, onsite service, and other extensive work
+          may require additional charges.
+          <br><br>
+          The customer is responsible for maintaining backups of their business data.
+        </div>
+
+        <p><strong>Software Author:</strong> Seavpeav Pech</p>
+        <p><strong>Hotel Management System — Offline • Lifetime License</strong></p>
+        <p>© 2026 Seavpeav Pech. All rights reserved.</p>
+      </section>
+
+    </article>
+  </div>
+</main>
+
+<footer>
+  <div>© 2026 Seavpeav Pech. All rights reserved.</div>
+  <div>Hotel Management System • Terms &amp; License Policy</div>
+  <a class="top" href="#top">Back to top ↑</a>
+</footer>
+
+</body>
+</html>

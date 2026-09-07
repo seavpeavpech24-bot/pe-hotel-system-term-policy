@@ -1,6 +1,4 @@
-from pathlib import Path
-
-md = """# Pe Hotel Management System
+# Hotel Management System
 
 ## Terms, License & Support Policy
 
@@ -428,8 +426,3 @@ Offline • Lifetime License
 **WhatsApp:** +855 16 700 896
 
 © 2026 Seavpeav Pech. All rights reserved.
-"""
-
-path = Path("/mnt/data/TERMS_AND_POLICIES.md")
-path.write_text(md, encoding="utf-8")
-print(path)
